@@ -1,0 +1,2 @@
+47 1 * * *  /usr/bin/lego --path="/etc/ocserv/.lego" --server=https://acme-v02.api.letsencrypt.org/directory --domains 185.20.139.137 --domains 2a04:3540:1000:310:38:daff:fe32:2975 --email "ADDRESS@gmail.com" --disable-cn --http renew --profile shortlived && systemctl restart ocserv
+

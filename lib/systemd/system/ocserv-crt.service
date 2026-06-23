@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenConnect SSL VPN Certificates server
+Documentation=man:ocserv(8)
+After=network-online.target
+
+[Service]
+PrivateTmp=true
+PIDFile=/run/ocserv-crt.pid
+Type=simple
+ExecStart=/usr/sbin/ocserv --foreground --pid-file /run/ocserv-crt.pid --config /etc/ocserv-crt/ocserv.conf
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
