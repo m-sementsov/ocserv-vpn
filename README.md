@@ -1,4 +1,4 @@
-Simple VPN server based on ocserv for a private VPN server on 1 core / 1GB machine
+Simple VPN server based on ocserv for hosting on 1 core / 1GB machine
 
 > Let's Encrypt/ACME client and library written in Go
 >
